@@ -46,7 +46,7 @@ export function Header() {
         </LangLink>
         <nav aria-label={t.footer.navTitle} className="hidden items-center gap-5 xl:flex">
           {NAV.map((k) => (
-            <LangLink key={k} page={k} className="text-sm font-semibold text-foreground hover:text-secondary">
+            <LangLink key={k} page={k} className="whitespace-nowrap text-sm font-semibold text-foreground hover:text-secondary">
               {t.nav[k]}
             </LangLink>
           ))}

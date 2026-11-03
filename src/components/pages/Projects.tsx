@@ -49,7 +49,7 @@ export function SolarPage() {
   const fmt = new Intl.NumberFormat(lang === "en" ? "en-IE" : lang, { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
   return (
     <>
-      <PageHeader eyebrow={s.eyebrow} title={t.programs[1].title} intro={t.programs[1].text} />
+      <PageHeader eyebrow={s.eyebrow} title={t.programs[1]!.title} intro={t.programs[1]!.text} />
       <Section>
         <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
           <div className="space-y-6">

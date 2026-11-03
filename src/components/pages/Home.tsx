@@ -59,7 +59,7 @@ export function HomePage() {
           </div>
           <ul className="grid grid-cols-2 gap-4">
             {h.pilotFeatures.map((f, i) => {
-              const Icon = featureIcons[i];
+              const Icon = featureIcons[i] ?? Lightbulb;
               return (
                 <li key={f} className="rounded-2xl bg-primary-foreground/10 p-5">
                   <Icon className="h-7 w-7 text-accent" aria-hidden />
@@ -79,7 +79,7 @@ export function HomePage() {
       <Section title={h.howTitle} className="bg-card">
         <ol className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {h.steps.map((s, i) => {
-            const Icon = stepIcons[i];
+            const Icon = stepIcons[i] ?? Search;
             return (
               <li key={s.t} className="relative rounded-2xl border border-border p-6">
                 <span className="text-4xl font-extrabold text-secondary/25">{i + 1}</span>

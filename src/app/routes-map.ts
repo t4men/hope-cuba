@@ -51,7 +51,7 @@ export function translatePath(pathname: string, target: Lang): string {
   const from = parts[0];
   if (!isLang(from)) return `/${target}`;
   if (parts.length === 1) return `/${target}`;
-  const key = pageKeyFromSlug(from, parts[1]);
+  const key = pageKeyFromSlug(from, parts[1] ?? "");
   if (!key) return `/${target}`;
   if (key === "projects" && parts[2] === solarSlug[from]) return pathFor(target, "solar");
   return pathFor(target, key);

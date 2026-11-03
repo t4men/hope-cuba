@@ -10,33 +10,75 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as LangRouteImport } from './routes/$lang'
+import { Route as LangIndexRouteImport } from './routes/$lang.index'
+import { Route as LangPageRouteImport } from './routes/$lang.$page'
+import { Route as LangPageSubRouteImport } from './routes/$lang.$page.$sub'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LangRoute = LangRouteImport.update({
+  id: '/$lang',
+  path: '/$lang',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LangIndexRoute = LangIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => LangRoute,
+} as any)
+const LangPageRoute = LangPageRouteImport.update({
+  id: '/$page',
+  path: '/$page',
+  getParentRoute: () => LangRoute,
+} as any)
+const LangPageSubRoute = LangPageSubRouteImport.update({
+  id: '/$sub',
+  path: '/$sub',
+  getParentRoute: () => LangPageRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/$lang': typeof LangRouteWithChildren
+  '/$lang/$page': typeof LangPageRouteWithChildren
+  '/$lang/': typeof LangIndexRoute
+  '/$lang/$page/$sub': typeof LangPageSubRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/$lang/$page': typeof LangPageRouteWithChildren
+  '/$lang': typeof LangIndexRoute
+  '/$lang/$page/$sub': typeof LangPageSubRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/$lang': typeof LangRouteWithChildren
+  '/$lang/$page': typeof LangPageRouteWithChildren
+  '/$lang/': typeof LangIndexRoute
+  '/$lang/$page/$sub': typeof LangPageSubRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/$lang' | '/$lang/$page' | '/$lang/' | '/$lang/$page/$sub'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/$lang/$page' | '/$lang' | '/$lang/$page/$sub'
+  id:
+    | '__root__'
+    | '/'
+    | '/$lang'
+    | '/$lang/$page'
+    | '/$lang/'
+    | '/$lang/$page/$sub'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  LangRoute: typeof LangRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +90,64 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/$lang': {
+      id: '/$lang'
+      path: '/$lang'
+      fullPath: '/$lang'
+      preLoaderRoute: typeof LangRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/$lang/': {
+      id: '/$lang/'
+      path: '/'
+      fullPath: '/$lang/'
+      preLoaderRoute: typeof LangIndexRouteImport
+      parentRoute: typeof LangRoute
+    }
+    '/$lang/$page': {
+      id: '/$lang/$page'
+      path: '/$page'
+      fullPath: '/$lang/$page'
+      preLoaderRoute: typeof LangPageRouteImport
+      parentRoute: typeof LangRoute
+    }
+    '/$lang/$page/$sub': {
+      id: '/$lang/$page/$sub'
+      path: '/$sub'
+      fullPath: '/$lang/$page/$sub'
+      preLoaderRoute: typeof LangPageSubRouteImport
+      parentRoute: typeof LangPageRoute
+    }
   }
 }
 
+interface LangPageRouteChildren {
+  LangPageSubRoute: typeof LangPageSubRoute
+}
+
+const LangPageRouteChildren: LangPageRouteChildren = {
+  LangPageSubRoute: LangPageSubRoute,
+}
+
+const LangPageRouteWithChildren = LangPageRoute._addFileChildren(
+  LangPageRouteChildren,
+)
+
+interface LangRouteChildren {
+  LangPageRoute: typeof LangPageRouteWithChildren
+  LangIndexRoute: typeof LangIndexRoute
+}
+
+const LangRouteChildren: LangRouteChildren = {
+  LangPageRoute: LangPageRouteWithChildren,
+  LangIndexRoute: LangIndexRoute,
+}
+
+const LangRouteWithChildren = LangRoute._addFileChildren(LangRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  LangRoute: LangRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

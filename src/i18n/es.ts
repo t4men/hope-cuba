@@ -12,7 +12,7 @@ export const es: Dict = {
     home: "Inicio",
     mission: "Misión",
     projects: "Proyectos",
-    donate: "Donar",
+    donate: "Donar y apoyar",
     involved: "Participa",
     about: "Sobre nosotros",
     transparency: "Transparencia",
@@ -31,8 +31,134 @@ export const es: Dict = {
     mission: { title: "Misión | Hope Cuba", description: "Ayuda concreta hoy, perspectivas sostenibles mañana: los cuatro programas de Hope Cuba." },
     projects: { title: "Proyectos | Hope Cuba", description: "Ayuda de emergencia, Centro de Ayuda Solar, salud y educación y nuevas oportunidades: todos los programas y su estado." },
     solar: { title: "Centro de Ayuda Solar de Holguín | Hope Cuba", description: "Centro humanitario previsto con energía solar en Holguín, con refrigeración, almacenamiento, tratamiento de agua y carga de teléfonos." },
-    donate: { title: "Donar y apoyar | Hope Cuba", description: "Cómo apoyar a Hope Cuba mientras se constituye la asociación, sin procesar pagos de forma prematura." },
-    involved: { title: "Participa | Hope Cuba", description: "Apoya de forma regular, ayuda como empresa, aporta tus conocimientos o comparte el proyecto." },
+    donate: {
+    "title": "La ayuda empieza hoy.",
+    "continuation": "Sin esperar a la constitución de la asociación.",
+    "intro": "Apoya a familias necesitadas en Holguín con una aportación económica, tu tiempo o tus conocimientos.",
+    "heroAlt": "Una mujer con dos niños en su hogar en Holguín, Cuba",
+    "status": "Hope Cuba está en proceso de constitución y aún no cuenta con reconocimiento fiscal como entidad benéfica.",
+    "unregistered": "Hope Cuba se ha constituido, pero aún no está inscrita en el registro de asociaciones.",
+    "registered": "Hope Cuba está inscrita en el registro de asociaciones.",
+    "tax": "Actualmente no podemos emitir certificados de donación con efectos fiscales.",
+    "taxReady": "El reconocimiento fiscal y la autorización para emitir certificados de donación están confirmados.",
+    "money": "Donar dinero",
+    "ask": "Consultar cómo donar",
+    "time": "Ofrecer tu tiempo y tus habilidades",
+    "goal": "Nuestra meta en 30 días",
+    "minimum": "Meta mínima",
+    "stretch": "Meta ampliada",
+    "until": "Hasta",
+    "received": "Fondos recibidos verificados",
+    "verifiedAt": "Última verificación",
+    "methods": "Donar dinero con transparencia y responsabilidad",
+    "pending": "Estamos revisando las vías de pago. Ya puedes ofrecer ayuda o consultar cómo aportar.",
+    "recipient": "Receptor legal de los fondos",
+    "recipientPending": "La asignación del receptor legal sigue en revisión. Aún no hay vías de pago activadas.",
+    "privateRecipient": "Recaudador privado; fondos separados de los de una futura asociación.",
+    "bank": "Transferencia bancaria",
+    "bankPending": "Estamos habilitando la cuenta bancaria. Contáctanos para hacer una aportación directa.",
+    "owner": "Titular de la cuenta",
+    "reference": "Concepto",
+    "bitcoin": "Bitcoin (on-chain)",
+    "btcPending": "Las donaciones en Bitcoin se activarán tras asignar el receptor, probar la recepción y revisar la contabilidad.",
+    "btcWarning": "Envía solo Bitcoin por la red principal. Las transacciones no se pueden revertir.",
+    "btcPrivacy": "Los pagos on-chain a direcciones reutilizadas pueden vincularse públicamente.",
+    "wallet": "Abrir billetera",
+    "silent": "Pagos silenciosos",
+    "silentPending": "Estamos preparando una opción de Bitcoin con mayor privacidad; aún no hay dirección aprobada.",
+    "silentWarning": "Solo para billeteras compatibles con BIP-352. No se garantiza el anonimato total.",
+    "crowdfunding": "Financiación colectiva",
+    "crowdPending": "Las campañas de financiación colectiva se están coordinando con las plataformas.",
+    "info": "Información de la plataforma",
+    "amounts": "Posible aportación",
+    "amountNote": "Sugerencias orientativas, no un proceso de pago ni un alcance de ayuda garantizado.",
+    "custom": "Otra cantidad",
+    "volunteerTitle": "No necesitas donar dinero para ayudar.",
+    "volunteerIntro": "Muchas personas en Cuba también necesitan a alguien que las escuche, mantenga el contacto y tome en serio sus preocupaciones. Puedes ayudar a documentar historias con consentimiento informado, mejorar nuestra web, conectar con organizaciones o colaborar en la recaudación de fondos. La participación es voluntaria. Nadie tiene que hacer pública su historia para recibir ayuda.",
+    "help": "Quiero ayudar",
+    "contactNote": "Coordinamos tu ofrecimiento personalmente por correo o teléfono.",
+    "partnerTitle": "Juntos podemos hacer más",
+    "partner": "Empresas y organizaciones",
+    "partnerText": "Ofrece material, conocimientos, logística o fondos para un proyecto de ayuda documentado. Indica tu organización y el tipo de apoyo.",
+    "partnerCta": "Ser colaborador",
+    "circle": "Círculo de apoyo",
+    "circleText": "Apoya regularmente sin membresía formal. Más adelante podrás solicitar ser socio colaborador según los estatutos. Un pago no crea una membresía.",
+    "circleCta": "Mostrar interés en el círculo de apoyo",
+    "faqTitle": "Transparencia y situación legal",
+    "closing": "Puedes ayudar hoy con una donación, una conversación o una habilidad.",
+    "reliefTitle": "Ayuda de emergencia para familias en Holguín",
+    "reliefAlt": "Cartel de ayuda de emergencia en español con una abuela y sus dos nietos",
+    "reliefNote": "Material de campaña de la iniciativa. Solo publicaremos costes y resultados con precios locales acreditados.",
+    "opportunities": [
+        {
+            "t": "Mantener el contacto con personas en Cuba",
+            "d": "Escuchar y mantener el contacto de forma voluntaria; nadie tiene que compartir su historia públicamente."
+        },
+        {
+            "t": "Documentar historias con respeto",
+            "d": "Entrevistas, audio, fotos y textos solo con consentimiento informado y documentado. Protección especial de menores y datos de salud."
+        },
+        {
+            "t": "Web y herramientas digitales",
+            "d": "Lovable, UX, SEO, accesibilidad, traducción y formularios."
+        },
+        {
+            "t": "Redes sociales y recaudación",
+            "d": "Publicaciones, campañas, vídeos y difusión en tu red personal."
+        },
+        {
+            "t": "Crear alianzas",
+            "d": "Contactar con empresas, ONG, farmacias, clínicas y socios logísticos."
+        },
+        {
+            "t": "Ayuda lingüística DE/EN/ES",
+            "d": "Traducir, acompañar conversaciones y corregir textos."
+        },
+        {
+            "t": "Conocimientos solares y médicos",
+            "d": "Fotovoltaica, baterías, refrigeración y logística legal de medicamentos."
+        },
+        {
+            "t": "Donaciones y contabilidad",
+            "d": "Contacto con donantes, comprobantes y evaluación documentada de resultados."
+        }
+    ],
+    "faq": [
+        {
+            "q": "¿Puedo aportar antes de la inscripción?",
+            "a": "Sí, puede ser posible ayudar mediante una iniciativa privada. Solo ofrecemos vías de pago tras confirmar el receptor, realizar pruebas técnicas y obtener las autorizaciones necesarias."
+        },
+        {
+            "q": "¿Quién recibe legalmente mi aportación?",
+            "a": "El receptor real se identifica junto a cada vía aprobada. Una recaudación privada debe identificar expresamente a Christof Kluska como recaudador privado. La asignación sigue pendiente."
+        },
+        {
+            "q": "¿Puedo deducir la aportación de impuestos?",
+            "a": "Actualmente no podemos emitir certificados de donación con efectos fiscales. El comprobante simplificado para pequeñas donaciones no sustituye el reconocimiento fiscal pendiente."
+        },
+        {
+            "q": "¿Cómo llegan legalmente los alimentos y medicamentos?",
+            "a": "Coordinamos las necesidades, compras y entregas con personas de confianza. Los medicamentos requieren gestión legal y profesional; bancos, proveedores y logística deben autorizar el proyecto humanitario en Cuba."
+        },
+        {
+            "q": "¿Qué ocurre si se rechaza un pago a Cuba?",
+            "a": "No eludimos sanciones ni normas de proveedores. Las vías no aprobadas permanecen inactivas mientras aclaramos una alternativa legal y coordinamos el uso de los fondos."
+        },
+        {
+            "q": "¿Cómo se documenta el uso de los fondos?",
+            "a": "Documentamos el origen, las vías de pago, comprobantes, necesidades y entregas. Los fondos privados y los de una futura asociación se registran por separado. Solo publicamos cifras acreditadas e imágenes autorizadas."
+        },
+        {
+            "q": "¿Puedo ayudar anónimamente? ¿Qué se ve en Bitcoin?",
+            "a": "Coordinamos personalmente la protección de tus datos. Bitcoin no es anónimo: las direcciones reutilizadas y transacciones se pueden vincular públicamente. Los pagos silenciosos requieren billeteras compatibles y no garantizan anonimato total."
+        },
+        {
+            "q": "¿Qué diferencia hay entre voluntariado, círculo de apoyo y socio colaborador?",
+            "a": "El voluntariado aporta tiempo o habilidades. El círculo apoya regularmente sin membresía. Ser socio colaborador requiere una solicitud separada según los estatutos; un pago no te convierte en socio."
+        }
+    ]
+},
+  involved: { title: "Participa | Hope Cuba", description: "Apoya de forma regular, ayuda como empresa, aporta tus conocimientos o comparte el proyecto." },
     about: { title: "Sobre nosotros | Hope Cuba", description: "Cómo nació Hope Cuba, quién forma el equipo fundador propuesto y cómo trabajamos." },
     transparency: { title: "Transparencia | Hope Cuba", description: "Estado de la asociación, estatutos, principios de uso de fondos y protección de los beneficiarios." },
     statutes: { title: "Estatutos y reglamentos | Hope Cuba", description: "Borrador de estatutos v1.4 de Hope Cuba en alemán, inglés y español; más adelante con reglamento interno y financiero." },
@@ -58,7 +184,7 @@ export const es: Dict = {
     call: "Llamar",
     email: "Escribir correo",
   },
-  share: { title: "Comparte este proyecto", share: "Compartir", copy: "Copiar enlace", copied: "Enlace copiado" },
+  share: { qrTitle: "Compartir la web", qrAlt: "Código QR para www.hope-cuba.org", error: "No se pudo copiar. Selecciona el enlace directamente.", title: "Comparte este proyecto", share: "Compartir", copy: "Copiar enlace", copied: "Enlace copiado" },
   home: {
     eyebrow: "Ayuda humanitaria – comenzando en Holguín, Cuba",
     h1: "La esperanza comienza con ayuda concreta.",
@@ -187,9 +313,11 @@ export const es: Dict = {
     formNote: "Todavía no hay un formulario en línea activo. Contáctanos por teléfono o correo electrónico.",
   },
   about: {
+    initiator: "Iniciador",
+    photoAlt: "Christof Kluska con un niño en Holguín, Cuba",
     title: "Sobre nosotros",
     storyTitle: "Cómo empezó todo",
-    story: "Desde su primer viaje a Cuba en enero de 2023, Christof Kluska (CK) apoya de forma privada a familias necesitadas en Cuba. A partir de esta experiencia nace Hope Cuba como proyecto de ayuda duradero.",
+    story: "Desde su primer viaje a Cuba en enero de 2023, Christof Kluska apoya de forma privada a familias necesitadas en Cuba. A partir de esta experiencia nace Hope Cuba como proyecto de ayuda duradero.",
     teamTitle: "Equipo fundador propuesto",
     teamNote: "Estas personas han sido propuestas para la fundación y aún no han sido elegidas.",
     team: [
@@ -238,7 +366,7 @@ export const es: Dict = {
       { q: "¿Cómo se garantiza que la ayuda llegue?", a: "Trabajamos con personas de confianza que conocemos personalmente y documentamos las necesidades, las compras, la entrega y el uso de los fondos." },
       { q: "¿Qué tipo de ayuda se necesita?", a: "Sobre todo alimentos, productos de higiene y medicamentos urgentes. Donaciones en especie solo tras consultarnos y según la lista de necesidades." },
       { q: "¿Qué es el Centro de Ayuda Solar?", a: "Un centro humanitario previsto con energía solar en Holguín, con refrigeración, almacenamiento, tratamiento de agua, iluminación y carga de teléfonos. Está en planificación." },
-      { q: "¿Puedo deducir mis donaciones de impuestos?", a: "Actualmente no se garantiza. Los certificados de donación solo serán posibles tras la inscripción y el reconocimiento de utilidad pública." },
+      { q: "¿Puedo deducir mis donaciones de impuestos?", a: "Actualmente no se garantiza. Actualmente no podemos emitir certificados de donación con efectos fiscales." },
       { q: "¿Hope Cuba también apoya a refugiados y migrantes en Alemania?", a: "Sí, está previsto en el borrador de estatutos, sin importar la nacionalidad." },
       { q: "¿Puedo ser socio colaborador o voluntario?", a: "Con gusto. La membresía colaboradora y el círculo de apoyo se crearán tras la constitución. Indícanos tu interés ya por teléfono o correo." },
     ],
@@ -257,7 +385,7 @@ export const es: Dict = {
     title: "Aviso legal",
     draftNote: "Borrador: debe revisarse legalmente antes de la publicación.",
     provider: "Información según el § 5 DDG (ley alemana de servicios digitales)",
-    status: "Forma jurídica: asociación no inscrita en constitución (aún sin inscripción registral).",
+    status: "Iniciativa privada de ayuda antes de constituir la asociación; sin inscripción registral.",
     responsible: "Responsable del contenido",
     responsibleName: "Christof Kluska (iniciador)",
   },

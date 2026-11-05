@@ -19,7 +19,7 @@ export const statutes: Record<Lang, StatuteDoc> = {
     heading: "Satzung des Vereins „Hope Cuba“",
     subtitle: "Gründungs- und Vorprüfungsentwurf | Version 1.4 | Stand: 03.11.2026",
     header:
-      "Vorgesehener Name nach Eintragung: Hope Cuba e.V. | Sitz: Messel, Deutschland | Geschäftsanschrift: Markstr. 27, 64409 Messel | Kontakt: +49 6159 9199799, hope-cuba@outlook.com",
+      "Vorgesehener Name nach Eintragung: Hope Cuba e.V. | Sitz: Messel, Deutschland | Geschäftsanschrift: Markstr. 27, 64409 Messel | Kontakt: +49 6159 9199799, info@hope-cuba.org",
     pdfUrl: pdfDe.url,
     sections: [
       { title: "§ 1 Name, Sitz, Geschäftsjahr", paras: ["Der Verein führt den Namen „Hope Cuba“. Er soll in das Vereinsregister eingetragen werden und führt nach Eintragung den Zusatz „e.V.“.", "Der Verein hat seinen Sitz in Messel.", "Das Geschäftsjahr ist das Kalenderjahr. Das erste Geschäftsjahr ist ein Rumpfgeschäftsjahr und endet am 31. Dezember des Gründungsjahres."] },
@@ -52,7 +52,7 @@ export const statutes: Record<Lang, StatuteDoc> = {
     heading: "Articles of Association of the Association “Hope Cuba”",
     subtitle: "Draft for Establishment and Preliminary Examination | Version 1.4 | As of: November 3, 2026",
     header:
-      "Intended name upon registration: Hope Cuba e.V. | Registered Office: Messel, Germany | Business Address: Markstr. 27, 64409 Messel | Contact: +49 6159 9199799, hope-cuba@outlook.com",
+      "Intended name upon registration: Hope Cuba e.V. | Registered Office: Messel, Germany | Business Address: Markstr. 27, 64409 Messel | Contact: +49 6159 9199799, info@hope-cuba.org",
     disclaimer:
       "This English translation of the Articles of Association is provided for convenience and information purposes only. In all legal matters, disputes, registration procedures, and official interpretations, ONLY the original German version (“Gründungssatzung”) is legally binding and valid.",
     pdfUrl: pdfEn.url,
@@ -87,7 +87,7 @@ export const statutes: Record<Lang, StatuteDoc> = {
     heading: "Estatutos de la Asociación «Hope Cuba»",
     subtitle: "Borrador de Constitución y Examen Previo | Versión 1.4 | A fecha de: 3 de noviembre de 2026",
     header:
-      "Nombre previsto tras la inscripción: Hope Cuba e.V. | Sede: Messel, Alemania | Dirección comercial: Markstr. 27, 64409 Messel | Contacto: +49 6159 9199799, hope-cuba@outlook.com",
+      "Nombre previsto tras la inscripción: Hope Cuba e.V. | Sede: Messel, Alemania | Dirección comercial: Markstr. 27, 64409 Messel | Contacto: +49 6159 9199799, info@hope-cuba.org",
     disclaimer:
       "Esta traducción al español de los Estatutos se ofrece exclusivamente con fines informativos y de cortesía. En todos los asuntos legales, disputas, trámites de registro e interpretaciones oficiales, ÚNICAMENTE la versión original en alemán («Gründungssatzung») es legalmente vinculante y válida.",
     pdfUrl: pdfEs.url,

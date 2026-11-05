@@ -12,7 +12,7 @@ export const en: Dict = {
     home: "Home",
     mission: "Mission",
     projects: "Projects",
-    donate: "Donate",
+    donate: "Donate & Support",
     involved: "Get involved",
     about: "About us",
     transparency: "Transparency",
@@ -31,8 +31,134 @@ export const en: Dict = {
     mission: { title: "Mission | Hope Cuba", description: "Practical help today, sustainable opportunities tomorrow: Hope Cuba's four programs." },
     projects: { title: "Projects | Hope Cuba", description: "Emergency relief, Solar Aid Center, healthcare & education and new opportunities – all programs and their status." },
     solar: { title: "Solar Aid Center Holguín | Hope Cuba", description: "Planned solar-powered aid center in Holguín with refrigeration, storage, water treatment and phone charging." },
-    donate: { title: "Donate & Support | Hope Cuba", description: "How you can support Hope Cuba while the association is being formed – without premature payment processing." },
-    involved: { title: "Get involved | Hope Cuba", description: "Support regularly, help as a company, share your expertise or spread the word." },
+    donate: {
+    "title": "Help starts today.",
+    "continuation": "Not only after the association is formed.",
+    "intro": "Support families in need in Holguín — with a financial contribution, your time or your skills.",
+    "heroAlt": "A woman with two boys in their home in Holguín, Cuba",
+    "status": "Hope Cuba is being established and has not yet received charitable tax recognition.",
+    "unregistered": "Hope Cuba has been founded but is not yet entered in the register of associations.",
+    "registered": "Hope Cuba is entered in the register of associations.",
+    "tax": "We cannot currently issue tax-deductible donation receipts.",
+    "taxReady": "Charitable tax recognition and authorization to issue donation receipts are confirmed.",
+    "money": "Donate money",
+    "ask": "Ask about donating",
+    "time": "Volunteer your time & skills",
+    "goal": "Our 30-day goal",
+    "minimum": "Minimum goal",
+    "stretch": "Extended goal",
+    "until": "Until",
+    "received": "Verified funds received",
+    "verifiedAt": "Last verified",
+    "methods": "Donate money — transparently and responsibly",
+    "pending": "Payment channels are being reviewed. You can offer help today or ask about making a contribution.",
+    "recipient": "Legal recipient of funds",
+    "recipientPending": "Legal recipient assignment is still being reviewed. No payment channel has been activated.",
+    "privateRecipient": "Private fundraiser; kept separate from funds of a future association.",
+    "bank": "Bank transfer",
+    "bankPending": "Our bank account is being arranged. Please contact us to make a direct contribution.",
+    "owner": "Account holder",
+    "reference": "Payment reference",
+    "bitcoin": "Bitcoin (on-chain)",
+    "btcPending": "Bitcoin donations will be activated after recipient assignment, a receipt test and accounting review.",
+    "btcWarning": "Send Bitcoin on mainnet only. Transactions cannot be reversed.",
+    "btcPrivacy": "On-chain payments using reused addresses are publicly linkable.",
+    "wallet": "Open wallet",
+    "silent": "Silent Payments",
+    "silentPending": "A more privacy-friendly Bitcoin donation option is in preparation — no approved address yet.",
+    "silentWarning": "For compatible BIP-352 wallets only. No promise of complete anonymity.",
+    "crowdfunding": "Crowdfunding",
+    "crowdPending": "Crowdfunding campaigns are currently being reviewed with the platforms.",
+    "info": "Platform information",
+    "amounts": "Possible contribution",
+    "amountNote": "Non-binding suggestions, not payment processing or a guaranteed scope of aid.",
+    "custom": "Custom amount",
+    "volunteerTitle": "You do not need to give money to make a difference.",
+    "volunteerIntro": "People in Cuba can also benefit from someone who listens, stays in touch and takes their concerns seriously. You can help document stories with informed consent, improve our website, connect us with organizations or assist with fundraising. Participation is voluntary. No one needs to share their story publicly in order to receive help.",
+    "help": "I want to help",
+    "contactNote": "We coordinate your offer personally by email or telephone.",
+    "partnerTitle": "Make more possible together",
+    "partner": "Companies & organizations",
+    "partnerText": "Offer goods, expertise, logistics or funding for a clearly documented aid project. Tell us your organization and the kind of help you can offer.",
+    "partnerCta": "Become a partner",
+    "circle": "Supporters’ circle",
+    "circleText": "Support regularly without formal membership. A supporting membership under the articles may be possible later on request. A payment does not create membership.",
+    "circleCta": "Express interest in the supporters’ circle",
+    "faqTitle": "Transparency & legal status",
+    "closing": "You can help today — with a contribution, a conversation or a skill.",
+    "reliefTitle": "Emergency aid for families in Holguín",
+    "reliefAlt": "English emergency aid campaign poster featuring a grandmother and her two grandsons",
+    "reliefNote": "Campaign artwork from the initiative. Costs and impact will be published only after local prices are evidenced.",
+    "opportunities": [
+        {
+            "t": "Stay connected with people in Cuba",
+            "d": "Listen voluntarily and keep in touch; nobody has to share their story publicly."
+        },
+        {
+            "t": "Document stories respectfully",
+            "d": "Interviews, audio, photos and text only with informed, documented consent. Special care for minors and health data."
+        },
+        {
+            "t": "Website & digital",
+            "d": "Lovable, UX, SEO, accessibility, translation and forms."
+        },
+        {
+            "t": "Social media & fundraising",
+            "d": "Posts, campaigns, videos and sharing in your personal network."
+        },
+        {
+            "t": "Build partnerships",
+            "d": "Connect with companies, NGOs, pharmacies, clinics and logistics partners."
+        },
+        {
+            "t": "Language help DE/EN/ES",
+            "d": "Translate, support conversations and proofread."
+        },
+        {
+            "t": "Solar & medical expertise",
+            "d": "PV systems, batteries, refrigeration and lawful medicine logistics."
+        },
+        {
+            "t": "Donation administration & accounting",
+            "d": "Donor outreach, receipts and evidence-based impact reporting."
+        }
+    ],
+    "faq": [
+        {
+            "q": "Can I give before registration?",
+            "a": "Yes, support through a private initiative can be possible. A payment channel is offered here only after recipient confirmation, technical tests and required approvals."
+        },
+        {
+            "q": "Who legally receives my contribution?",
+            "a": "The actual recipient is identified directly beside each approved payment channel. A private collection must explicitly identify Christof Kluska as a private fundraiser. Assignment is still pending."
+        },
+        {
+            "q": "Can I deduct my contribution from tax?",
+            "a": "We cannot currently issue tax-deductible donation receipts. Simplified proof for small donations does not replace missing charitable recognition."
+        },
+        {
+            "q": "How do food and medicines reach people lawfully?",
+            "a": "Needs, purchasing and hand-over are coordinated with trusted local people. Medicines require lawful, qualified handling; banks, providers and logistics partners must approve the Cuba humanitarian project."
+        },
+        {
+            "q": "What if a provider rejects a Cuba payment?",
+            "a": "We do not bypass sanctions or provider rules. Unapproved channels remain inactive while we clarify a lawful alternative and coordinate the use of funds with those involved."
+        },
+        {
+            "q": "How is the use of funds documented?",
+            "a": "Funding sources, payment channels, receipts, needs and deliveries are documented. Private and future association funds are recorded separately. Reports use only evidenced figures and approved images."
+        },
+        {
+            "q": "Can I help anonymously? What is public with Bitcoin?",
+            "a": "We coordinate protection of your data personally. Bitcoin is not anonymous: reused addresses and transactions are publicly linkable. Silent Payments require compatible wallets and do not guarantee complete anonymity."
+        },
+        {
+            "q": "How do volunteering, the supporters’ circle and supporting membership differ?",
+            "a": "Volunteering means time or skills. The supporters’ circle gives regularly without membership. Supporting membership requires a separate application under the articles; payment alone does not make you a member."
+        }
+    ]
+},
+  involved: { title: "Get involved | Hope Cuba", description: "Support regularly, help as a company, share your expertise or spread the word." },
     about: { title: "About us | Hope Cuba", description: "How Hope Cuba started, who the proposed founding team is and how we work." },
     transparency: { title: "Transparency | Hope Cuba", description: "Association status, articles of association, principles for use of funds and beneficiary protection." },
     statutes: { title: "Articles of Association & Regulations | Hope Cuba", description: "Hope Cuba's draft articles of association v1.4 in German, English and Spanish – later with rules of procedure and financial regulations." },
@@ -58,7 +184,7 @@ export const en: Dict = {
     call: "Call",
     email: "Send email",
   },
-  share: { title: "Share this project", share: "Share", copy: "Copy link", copied: "Link copied" },
+  share: { qrTitle: "Share the website", qrAlt: "QR code for www.hope-cuba.org", error: "Unable to copy. Please select the link directly.", title: "Share this project", share: "Share", copy: "Copy link", copied: "Link copied" },
   home: {
     eyebrow: "Humanitarian aid – starting in Holguín, Cuba",
     h1: "Hope begins with practical help.",
@@ -116,8 +242,8 @@ export const en: Dict = {
     text:
       "Hope Cuba connects emergency relief with long-term opportunity. Our aim is to help people in need access food, essential medicines, reliable energy, education and new opportunities. We start with trusted local people in Holguín and make our work accountable through documented needs assessment, purchasing and use of funds.",
     pillarsTitle: "The four pillars",
-    graphicTitle: "",
-    graphicAlt: "",
+    graphicTitle: "Our mission as an infographic",
+    graphicAlt: "English mission infographic of Hope Cuba with its four program pillars",
   },
   programs: [
     { key: "relief", title: "Food & Essential Medicines", text: "Food, hygiene supplies and urgently needed medicines for families in need. Needs and distributions are documented; medicines are handled through lawful, qualified channels." },
@@ -187,9 +313,11 @@ export const en: Dict = {
     formNote: "An online form is not active yet. Please get in touch by phone or email.",
   },
   about: {
+    initiator: "Initiator",
+    photoAlt: "Christof Kluska holding a child in Holguín, Cuba",
     title: "About us",
     storyTitle: "How it all began",
-    story: "Since his first trip to Cuba in January 2023, Christof Kluska (CK) has privately supported families in need in Cuba. From this experience, Hope Cuba is being created as a lasting aid project.",
+    story: "Since his first trip to Cuba in January 2023, Christof Kluska has privately supported families in need in Cuba. From this experience, Hope Cuba is being created as a lasting aid project.",
     teamTitle: "Proposed founding team",
     teamNote: "These people have been proposed for the founding and have not yet been elected.",
     team: [
@@ -238,7 +366,7 @@ export const en: Dict = {
       { q: "How do you make sure help arrives?", a: "We work with trusted local people we know personally and document needs, purchasing, hand-over and use of funds." },
       { q: "Which aid supplies are needed?", a: "Mainly food, hygiene supplies and urgently needed medicines. In-kind donations only after consultation and according to the current needs list." },
       { q: "What is the Solar Aid Center?", a: "A planned solar-powered aid center in Holguín with refrigeration, storage, water treatment, lighting and phone charging. It is currently in planning." },
-      { q: "Can I get a tax-deductible receipt?", a: "This is not currently guaranteed. Donation receipts will only be possible after registration and recognition of charitable status." },
+      { q: "Can I get a tax-deductible receipt?", a: "This is not currently guaranteed. We cannot currently issue tax-deductible donation receipts." },
       { q: "Does Hope Cuba also support refugees and migrants in Germany?", a: "Yes, this is provided for in the draft articles – regardless of nationality." },
       { q: "Can I become a supporting member or volunteer?", a: "Gladly. Supporting membership and the supporters' circle will be set up after formation. Register your interest now by phone or email." },
     ],
@@ -257,7 +385,7 @@ export const en: Dict = {
     title: "Legal notice",
     draftNote: "Draft – to be legally reviewed before public launch.",
     provider: "Information pursuant to § 5 DDG (German Digital Services Act)",
-    status: "Legal form: unregistered association in formation (not yet entered in the register).",
+    status: "Private aid initiative before association formation; not registered.",
     responsible: "Responsible for content",
     responsibleName: "Christof Kluska (initiator)",
   },

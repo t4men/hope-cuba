@@ -29,133 +29,7 @@ export const de = {
     mission: { title: "Mission | Hope Cuba", description: "Konkrete Hilfe heute, nachhaltige Perspektiven morgen: die vier Programme von Hope Cuba." },
     projects: { title: "Projekte | Hope Cuba", description: "Nothilfe, Solar Aid Center, Gesundheit & Bildung und neue Perspektiven – alle Programme und ihr aktueller Status." },
     solar: { title: "Solar Aid Center Holguín | Hope Cuba", description: "Geplantes solarbetriebenes Hilfszentrum in Holguín mit Kühlung, Lagerung, Wasseraufbereitung und Ladestation." },
-    donate: {
-    "title": "Hilfe beginnt heute.",
-    "continuation": "Nicht erst nach der Vereinsgründung.",
-    "intro": "Unterstütze bedürftige Familien in Holguín – mit einer Geldspende, deiner Zeit oder deinem Wissen.",
-    "heroAlt": "Eine Frau mit zwei Jungen in ihrem Zuhause in Holguín, Kuba",
-    "status": "Hope Cuba befindet sich in Gründung und ist noch nicht als gemeinnützig anerkannt.",
-    "unregistered": "Hope Cuba ist gegründet, aber noch nicht im Vereinsregister eingetragen.",
-    "registered": "Hope Cuba ist im Vereinsregister eingetragen.",
-    "tax": "Aktuell können wir keine steuerlich wirksame Spendenbescheinigung ausstellen.",
-    "taxReady": "Steuerliche Anerkennung und Berechtigung zur Ausstellung von Spendenbescheinigungen sind bestätigt.",
-    "money": "Geld spenden",
-    "ask": "Spendenweg anfragen",
-    "time": "Zeit & Fähigkeiten anbieten",
-    "goal": "Unser 30-Tage-Ziel",
-    "minimum": "Mindestziel",
-    "stretch": "Erweitertes Ziel",
-    "until": "Bis",
-    "received": "Verifiziert eingegangen",
-    "verifiedAt": "Zuletzt geprüft",
-    "methods": "Geld spenden – transparent und nachvollziehbar",
-    "pending": "Zahlungswege werden geprüft. Du kannst schon heute Hilfe anbieten oder einen Spendenweg anfragen.",
-    "recipient": "Rechtlicher Zahlungsempfänger",
-    "recipientPending": "Die rechtliche Empfängerzuordnung wird noch geprüft. Noch kein Zahlungsweg freigeschaltet.",
-    "privateRecipient": "Privater Spendensammler; getrennt von den Mitteln eines späteren Vereins.",
-    "bank": "Banküberweisung",
-    "bankPending": "Bankverbindung wird eingerichtet. Bitte kontaktiere uns für eine direkte Spende.",
-    "owner": "Kontoinhaber",
-    "reference": "Verwendungszweck",
-    "bitcoin": "Bitcoin (on-chain)",
-    "btcPending": "Bitcoin-Spenden werden nach Empfängerzuordnung, Empfangstest und Buchhaltungsprüfung freigeschaltet.",
-    "btcWarning": "Nur Bitcoin im Hauptnetzwerk senden. Transaktionen sind nicht rückgängig zu machen.",
-    "btcPrivacy": "On-chain-Zahlungen über wiederverwendete Adressen sind öffentlich verknüpfbar.",
-    "wallet": "Wallet öffnen",
-    "silent": "Silent Payments",
-    "silentPending": "Datenschutzfreundlichere Bitcoin-Spendenoption in Vorbereitung – noch keine freigegebene Adresse.",
-    "silentWarning": "Nur für kompatible BIP-352-Wallets. Keine Zusage völliger Anonymität.",
-    "crowdfunding": "Crowdfunding",
-    "crowdPending": "Crowdfunding-Kampagnen werden aktuell mit den Plattformen abgestimmt.",
-    "info": "Plattform-Info",
-    "amounts": "Möglicher Beitrag",
-    "amountNote": "Unverbindliche Empfehlungen, keine Zahlungsabwicklung und kein zugesicherter Leistungsumfang.",
-    "custom": "Eigener Betrag",
-    "volunteerTitle": "Du musst nicht spenden können, um zu helfen.",
-    "volunteerIntro": "Viele Menschen in Kuba brauchen jemanden, der zuhört, regelmäßig Kontakt hält und konkrete Sorgen ernst nimmt. Andere können Geschichten mit Zustimmung der Betroffenen dokumentieren, unsere Website verbessern, Kontakte zu Hilfsorganisationen herstellen oder beim Fundraising helfen. Jede Unterstützung wird respektvoll abgestimmt. Niemand muss seine Geschichte öffentlich machen, um Hilfe zu erhalten.",
-    "help": "Ich helfe mit",
-    "contactNote": "Dein Hilfsangebot stimmen wir persönlich per E-Mail oder Telefon ab.",
-    "partnerTitle": "Gemeinsam mehr möglich machen",
-    "partner": "Unternehmen & Organisationen",
-    "partnerText": "Biete Sachleistungen, Fachwissen, Logistik oder Geld für ein konkret nachvollziehbares Hilfsprojekt an. Nenne uns deine Organisation und die Art der Hilfe.",
-    "partnerCta": "Partner werden",
-    "circle": "Förderkreis",
-    "circleText": "Regelmäßig unterstützen ohne formale Mitgliedschaft. Auf Wunsch ist später eine Fördermitgliedschaft nach geltender Satzung möglich. Eine Geldzahlung begründet keine Mitgliedschaft.",
-    "circleCta": "Interesse am Förderkreis melden",
-    "faqTitle": "Transparenz & rechtlicher Status",
-    "closing": "Du kannst heute helfen – mit einer Spende, einem Gespräch oder einer Fähigkeit.",
-    "reliefTitle": "Nothilfe für Familien in Holguín",
-    "reliefAlt": "Deutsches Nothilfe-Kampagnenmotiv mit einer Großmutter und ihren zwei Enkeln",
-    "reliefNote": "Kampagnenmotiv der Initiative. Kosten und Wirkung werden erst nach belegten lokalen Preisen veröffentlicht.",
-    "opportunities": [
-        {
-            "t": "Mit Menschen in Kuba in Kontakt bleiben",
-            "d": "Freiwillig zuhören und regelmäßig Kontakt halten; niemand muss seine Geschichte öffentlich teilen."
-        },
-        {
-            "t": "Geschichten respektvoll dokumentieren",
-            "d": "Interviews, Audio, Fotos und Texte nur mit informierter, dokumentierter Einwilligung. Besonderer Schutz für Minderjährige und Gesundheitsdaten."
-        },
-        {
-            "t": "Website & Digitales",
-            "d": "Lovable, UX, SEO, Barrierefreiheit, Übersetzung und Formulare."
-        },
-        {
-            "t": "Social Media & Fundraising",
-            "d": "Posts, Kampagnen, Videos und Teilen im persönlichen Netzwerk."
-        },
-        {
-            "t": "Partnerschaften aufbauen",
-            "d": "Unternehmen, NGOs, Apotheken, Kliniken und Logistikpartner ansprechen."
-        },
-        {
-            "t": "Sprachhilfe DE/EN/ES",
-            "d": "Übersetzen, Gespräche begleiten und Korrektur lesen."
-        },
-        {
-            "t": "Solar & medizinische Fachkenntnisse",
-            "d": "PV-Technik, Batterien, Kühlung und rechtssichere Arzneimittellogistik."
-        },
-        {
-            "t": "Spendenorganisation & Buchhaltung",
-            "d": "Fördereransprache, Belege und nachvollziehbare Wirkungsmessung."
-        }
-    ],
-    "faq": [
-        {
-            "q": "Kann ich schon vor der Eintragung Geld geben?",
-            "a": "Ja, grundsätzlich ist Hilfe auch in einer privaten Initiative möglich. Ein Zahlungsweg wird hier erst nach bestätigtem Empfänger, technischen Tests und erforderlichen Freigaben angeboten."
-        },
-        {
-            "q": "Wer erhält meine Spende rechtlich?",
-            "a": "Der tatsächliche Empfänger wird unmittelbar am freigegebenen Zahlungsweg genannt. Bei einer privaten Sammlung muss Christof Kluska ausdrücklich als privater Spendensammler zugeordnet sein. Die Zuordnung ist noch offen."
-        },
-        {
-            "q": "Kann ich die Spende steuerlich absetzen?",
-            "a": "Aktuell können wir keine steuerlich wirksame Spendenbescheinigung ausstellen. Auch der vereinfachte Kleinspendennachweis ersetzt die fehlende Anerkennung nicht."
-        },
-        {
-            "q": "Wie gelangen Lebensmittel und Medikamente rechtssicher zu den Menschen?",
-            "a": "Bedarf, Beschaffung und Übergabe werden mit Vertrauenspersonen abgestimmt. Medikamente benötigen fachgerechte, zulässige Wege; Bank, Dienstleister und Logistik müssen das Kuba-Humanitärprojekt freigeben."
-        },
-        {
-            "q": "Was passiert bei einer abgelehnten Kuba-Zahlung?",
-            "a": "Wir umgehen keine Sanktionen oder Anbieterregeln. Ein nicht freigegebener Weg bleibt gesperrt; wir klären eine rechtmäßige Alternative und stimmen die weitere Verwendung mit den Beteiligten ab."
-        },
-        {
-            "q": "Wie wird die Verwendung dokumentiert?",
-            "a": "Mittelherkunft, Zahlungswege, Belege, Bedarf und Übergaben werden dokumentiert. Private Mittel und spätere Vereinsmittel werden getrennt erfasst. Berichte enthalten nur belegte Zahlen und freigegebene Bilder."
-        },
-        {
-            "q": "Kann ich anonym helfen? Was ist bei Bitcoin sichtbar?",
-            "a": "Wir stimmen den Schutz deiner Daten persönlich ab. Bitcoin ist nicht anonym: wiederverwendete Adressen und Transaktionen sind öffentlich verknüpfbar. Silent Payments erfordern kompatible Wallets und garantieren keine völlige Anonymität."
-        },
-        {
-            "q": "Was unterscheidet Ehrenamt, Förderkreis und Fördermitgliedschaft?",
-            "a": "Ehrenamt bedeutet Zeit oder Fähigkeiten. Der Förderkreis unterstützt regelmäßig ohne Mitgliedschaft. Fördermitgliedschaft erfordert einen gesonderten Antrag nach Satzung; eine Zahlung allein macht dich nicht zum Mitglied."
-        }
-    ]
-},
+    donate: {"title": "Spenden & Unterstützen | Hope Cuba", "description": "Unterstütze bedürftige Familien in Holguín – mit einer Geldspende, deiner Zeit oder deinem Wissen."},
   involved: { title: "Mitmachen | Hope Cuba", description: "Regelmäßig unterstützen, als Unternehmen helfen, Fachwissen einbringen oder das Projekt teilen." },
     about: { title: "Über uns | Hope Cuba", description: "Wie Hope Cuba entstanden ist, wer das vorgeschlagene Gründungsteam ist und wie wir arbeiten." },
     transparency: { title: "Transparenz | Hope Cuba", description: "Vereinsstatus, Satzung, Grundsätze der Mittelverwendung und Schutz der Begünstigten." },
@@ -311,6 +185,132 @@ export const de = {
     target: "Zielstufe",
   },
   donate: {
+    "title": "Hilfe beginnt heute.",
+    "continuation": "Nicht erst nach der Vereinsgründung.",
+    "intro": "Unterstütze bedürftige Familien in Holguín – mit einer Geldspende, deiner Zeit oder deinem Wissen.",
+    "heroAlt": "Eine Frau mit zwei Jungen in ihrem Zuhause in Holguín, Kuba",
+    "status": "Hope Cuba befindet sich in Gründung und ist noch nicht als gemeinnützig anerkannt.",
+    "unregistered": "Hope Cuba ist gegründet, aber noch nicht im Vereinsregister eingetragen.",
+    "registered": "Hope Cuba ist im Vereinsregister eingetragen.",
+    "tax": "Aktuell können wir keine steuerlich wirksame Spendenbescheinigung ausstellen.",
+    "taxReady": "Steuerliche Anerkennung und Berechtigung zur Ausstellung von Spendenbescheinigungen sind bestätigt.",
+    "money": "Geld spenden",
+    "ask": "Spendenweg anfragen",
+    "time": "Zeit & Fähigkeiten anbieten",
+    "goal": "Unser 30-Tage-Ziel",
+    "minimum": "Mindestziel",
+    "stretch": "Erweitertes Ziel",
+    "until": "Bis",
+    "received": "Verifiziert eingegangen",
+    "verifiedAt": "Zuletzt geprüft",
+    "methods": "Geld spenden – transparent und nachvollziehbar",
+    "pending": "Zahlungswege werden geprüft. Du kannst schon heute Hilfe anbieten oder einen Spendenweg anfragen.",
+    "recipient": "Rechtlicher Zahlungsempfänger",
+    "recipientPending": "Die rechtliche Empfängerzuordnung wird noch geprüft. Noch kein Zahlungsweg freigeschaltet.",
+    "privateRecipient": "Privater Spendensammler; getrennt von den Mitteln eines späteren Vereins.",
+    "bank": "Banküberweisung",
+    "bankPending": "Bankverbindung wird eingerichtet. Bitte kontaktiere uns für eine direkte Spende.",
+    "owner": "Kontoinhaber",
+    "reference": "Verwendungszweck",
+    "bitcoin": "Bitcoin (on-chain)",
+    "btcPending": "Bitcoin-Spenden werden nach Empfängerzuordnung, Empfangstest und Buchhaltungsprüfung freigeschaltet.",
+    "btcWarning": "Nur Bitcoin im Hauptnetzwerk senden. Transaktionen sind nicht rückgängig zu machen.",
+    "btcPrivacy": "On-chain-Zahlungen über wiederverwendete Adressen sind öffentlich verknüpfbar.",
+    "wallet": "Wallet öffnen",
+    "silent": "Silent Payments",
+    "silentPending": "Datenschutzfreundlichere Bitcoin-Spendenoption in Vorbereitung – noch keine freigegebene Adresse.",
+    "silentWarning": "Nur für kompatible BIP-352-Wallets. Keine Zusage völliger Anonymität.",
+    "crowdfunding": "Crowdfunding",
+    "crowdPending": "Crowdfunding-Kampagnen werden aktuell mit den Plattformen abgestimmt.",
+    "info": "Plattform-Info",
+    "amounts": "Möglicher Beitrag",
+    "amountNote": "Unverbindliche Empfehlungen, keine Zahlungsabwicklung und kein zugesicherter Leistungsumfang.",
+    "custom": "Eigener Betrag",
+    "volunteerTitle": "Du musst nicht spenden können, um zu helfen.",
+    "volunteerIntro": "Viele Menschen in Kuba brauchen jemanden, der zuhört, regelmäßig Kontakt hält und konkrete Sorgen ernst nimmt. Andere können Geschichten mit Zustimmung der Betroffenen dokumentieren, unsere Website verbessern, Kontakte zu Hilfsorganisationen herstellen oder beim Fundraising helfen. Jede Unterstützung wird respektvoll abgestimmt. Niemand muss seine Geschichte öffentlich machen, um Hilfe zu erhalten.",
+    "help": "Ich helfe mit",
+    "contactNote": "Dein Hilfsangebot stimmen wir persönlich per E-Mail oder Telefon ab.",
+    "partnerTitle": "Gemeinsam mehr möglich machen",
+    "partner": "Unternehmen & Organisationen",
+    "partnerText": "Biete Sachleistungen, Fachwissen, Logistik oder Geld für ein konkret nachvollziehbares Hilfsprojekt an. Nenne uns deine Organisation und die Art der Hilfe.",
+    "partnerCta": "Partner werden",
+    "circle": "Förderkreis",
+    "circleText": "Regelmäßig unterstützen ohne formale Mitgliedschaft. Auf Wunsch ist später eine Fördermitgliedschaft nach geltender Satzung möglich. Eine Geldzahlung begründet keine Mitgliedschaft.",
+    "circleCta": "Interesse am Förderkreis melden",
+    "faqTitle": "Transparenz & rechtlicher Status",
+    "closing": "Du kannst heute helfen – mit einer Spende, einem Gespräch oder einer Fähigkeit.",
+    "reliefTitle": "Nothilfe für Familien in Holguín",
+    "reliefAlt": "Deutsches Nothilfe-Kampagnenmotiv mit einer Großmutter und ihren zwei Enkeln",
+    "reliefNote": "Kampagnenmotiv der Initiative. Kosten und Wirkung werden erst nach belegten lokalen Preisen veröffentlicht.",
+    "opportunities": [
+        {
+            "t": "Mit Menschen in Kuba in Kontakt bleiben",
+            "d": "Freiwillig zuhören und regelmäßig Kontakt halten; niemand muss seine Geschichte öffentlich teilen."
+        },
+        {
+            "t": "Geschichten respektvoll dokumentieren",
+            "d": "Interviews, Audio, Fotos und Texte nur mit informierter, dokumentierter Einwilligung. Besonderer Schutz für Minderjährige und Gesundheitsdaten."
+        },
+        {
+            "t": "Website & Digitales",
+            "d": "Lovable, UX, SEO, Barrierefreiheit, Übersetzung und Formulare."
+        },
+        {
+            "t": "Social Media & Fundraising",
+            "d": "Posts, Kampagnen, Videos und Teilen im persönlichen Netzwerk."
+        },
+        {
+            "t": "Partnerschaften aufbauen",
+            "d": "Unternehmen, NGOs, Apotheken, Kliniken und Logistikpartner ansprechen."
+        },
+        {
+            "t": "Sprachhilfe DE/EN/ES",
+            "d": "Übersetzen, Gespräche begleiten und Korrektur lesen."
+        },
+        {
+            "t": "Solar & medizinische Fachkenntnisse",
+            "d": "PV-Technik, Batterien, Kühlung und rechtssichere Arzneimittellogistik."
+        },
+        {
+            "t": "Spendenorganisation & Buchhaltung",
+            "d": "Fördereransprache, Belege und nachvollziehbare Wirkungsmessung."
+        }
+    ],
+    "faq": [
+        {
+            "q": "Kann ich schon vor der Eintragung Geld geben?",
+            "a": "Ja, grundsätzlich ist Hilfe auch in einer privaten Initiative möglich. Ein Zahlungsweg wird hier erst nach bestätigtem Empfänger, technischen Tests und erforderlichen Freigaben angeboten."
+        },
+        {
+            "q": "Wer erhält meine Spende rechtlich?",
+            "a": "Der tatsächliche Empfänger wird unmittelbar am freigegebenen Zahlungsweg genannt. Bei einer privaten Sammlung muss Christof Kluska ausdrücklich als privater Spendensammler zugeordnet sein. Die Zuordnung ist noch offen."
+        },
+        {
+            "q": "Kann ich die Spende steuerlich absetzen?",
+            "a": "Aktuell können wir keine steuerlich wirksame Spendenbescheinigung ausstellen. Auch der vereinfachte Kleinspendennachweis ersetzt die fehlende Anerkennung nicht."
+        },
+        {
+            "q": "Wie gelangen Lebensmittel und Medikamente rechtssicher zu den Menschen?",
+            "a": "Bedarf, Beschaffung und Übergabe werden mit Vertrauenspersonen abgestimmt. Medikamente benötigen fachgerechte, zulässige Wege; Bank, Dienstleister und Logistik müssen das Kuba-Humanitärprojekt freigeben."
+        },
+        {
+            "q": "Was passiert bei einer abgelehnten Kuba-Zahlung?",
+            "a": "Wir umgehen keine Sanktionen oder Anbieterregeln. Ein nicht freigegebener Weg bleibt gesperrt; wir klären eine rechtmäßige Alternative und stimmen die weitere Verwendung mit den Beteiligten ab."
+        },
+        {
+            "q": "Wie wird die Verwendung dokumentiert?",
+            "a": "Mittelherkunft, Zahlungswege, Belege, Bedarf und Übergaben werden dokumentiert. Private Mittel und spätere Vereinsmittel werden getrennt erfasst. Berichte enthalten nur belegte Zahlen und freigegebene Bilder."
+        },
+        {
+            "q": "Kann ich anonym helfen? Was ist bei Bitcoin sichtbar?",
+            "a": "Wir stimmen den Schutz deiner Daten persönlich ab. Bitcoin ist nicht anonym: wiederverwendete Adressen und Transaktionen sind öffentlich verknüpfbar. Silent Payments erfordern kompatible Wallets und garantieren keine völlige Anonymität."
+        },
+        {
+            "q": "Was unterscheidet Ehrenamt, Förderkreis und Fördermitgliedschaft?",
+            "a": "Ehrenamt bedeutet Zeit oder Fähigkeiten. Der Förderkreis unterstützt regelmäßig ohne Mitgliedschaft. Fördermitgliedschaft erfordert einen gesonderten Antrag nach Satzung; eine Zahlung allein macht dich nicht zum Mitglied."
+        }
+    ]
+}
     title: "Spenden & Unterstützen",
     intro: "Hope Cuba befindet sich in Gründung. Deshalb nehmen wir derzeit noch keine Spenden über diese Website entgegen.",
     whyTitle: "Warum noch keine Spenden?",

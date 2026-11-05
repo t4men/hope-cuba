@@ -45,11 +45,18 @@ export const payment = {
 export const isRegistered = () =>
   organization.legalStatus === "registered_not_tax_approved" || organization.legalStatus === "tax_approved";
 
-export const bankLive = () => payment.bank.enabled && payment.bank.verified && !!payment.bank.iban && !!payment.bank.owner;
-export const bitcoinLive = () => payment.bitcoin.enabled && payment.bitcoin.verified && !!payment.bitcoin.address;
-export const silentLive = () => payment.silentPayments.enabled && payment.silentPayments.verified && !!payment.silentPayments.address;
-export const liveCampaigns = () => payment.crowdfunding.filter((c) => c.approved && c.campaignUrl);
-export const anyPaymentLive = () => bankLive() || bitcoinLive() || liveCampaigns().length > 0;
+export const bankLive = (bank = payment.bank, recipient = organization.officialRecipientName) =>
+  bank.enabled && bank.verified && !!bank.iban && !!bank.owner && !!recipient;
+export const bitcoinLive = (bitcoin = payment.bitcoin, recipient = organization.officialRecipientName) =>
+  bitcoin.enabled && bitcoin.verified && !!bitcoin.address && !!bitcoin.ownerDescription && !!recipient;
+export const silentLive = (silent = payment.silentPayments, recipient = organization.officialRecipientName) =>
+  silent.enabled && silent.verified && !!silent.address && !!recipient;
+export const liveCampaigns = (campaigns = payment.crowdfunding, recipient = organization.officialRecipientName) =>
+  campaigns.filter((c) => !!recipient && c.approved && /^https:\/\//.test(c.campaignUrl) && c.campaignUrl !== c.infoUrl);
+export const anyPaymentLive = () => bankLive() || bitcoinLive() || silentLive() || liveCampaigns().length > 0;
+export const receiptsLive = () => organization.taxRecognitionConfirmed && organization.donationReceiptAuthorized;
+export const verifiedProgress = (received = campaign.verifiedReceivedEUR) =>
+  received === null ? null : Math.min(100, Math.max(0, received / campaign.stretchGoalEUR * 100));
 
 // Legacy flags used across the site, derived from the config above.
 export const organizationStatus = {

@@ -106,7 +106,6 @@
   --sidebar-ring: oklch(0.704 0.04 256.788);
   --shadow-soft: 0 10px 30px -12px color-mix(in oklab, var(--primary) 25%, transparent);
   --gradient-hero: linear-gradient(180deg, color-mix(in oklab, var(--primary) 10%, transparent), transparent 60%);
-  --donation-photo-shade: linear-gradient(90deg, color-mix(in oklab, var(--primary) 96%, transparent) 0%, color-mix(in oklab, var(--primary) 85%, transparent) 38%, color-mix(in oklab, var(--primary) 25%, transparent) 100%);
 }
 
 @layer base {
@@ -132,8 +131,3 @@
 
 @utility shadow-soft { box-shadow: var(--shadow-soft); }
 @utility container-page { width: 100%; max-width: 72rem; margin-inline: auto; padding-inline: 1.25rem; }
-
-.donation-photo-shade { background: var(--donation-photo-shade); }
-@media (max-width: 640px) {
-  .donation-photo-shade { background: color-mix(in oklab, var(--primary) 78%, transparent); }
-}

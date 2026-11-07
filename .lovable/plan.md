@@ -15,6 +15,8 @@ Neue Spendenseite in DE / EN / ES, Aufbau laut Vorgabe:
 6. **Transparenz-FAQ** – 8 Fragen und Antworten aus der Vorlage.
 7. **Abschluss** – Aufruf mit Kontaktmöglichkeit.
 
+**X-Kanal (neu, auf der ganzen Website):** Gut sichtbarer Hinweis "Folgen Sie uns auf X" mit Link zu https://x.com/HopeCuba – für aktuelle Infos, Erfolgsgeschichten, Projekt-Updates und Einblicke von Menschen vor Ort. Platziert auf der Startseite, auf der Spendenseite, im Teilen-Bereich und unten auf jeder Seite.
+
 Wichtig vor der Eintragung: Als Empfänger wird Christof Kluska (Initiator) als privater Sammler genannt, nicht "Hope Cuba e.V.". Keine Countdowns oder Drucktexte. Bisherige Farben (Navy/Grün/Gold) bleiben.
 
 ## Regeln
@@ -26,6 +28,7 @@ Wichtig vor der Eintragung: Als Empfänger wird Christof Kluska (Initiator) als 
 - Neues Konfigurationsmodul `src/config/hope-cuba.ts` (LegalStatus, campaign, organization, payment: bank, bitcoin, silentPayments, crowdfunding); `organization-status.ts` liest daraus bzw. bleibt kompatibel.
 - Neue Bilder (3 Nothilfe-Plakate v1.1, BTC-QR v1.0-2) als Lovable Assets in `media.ts`; Bitcoin enabled/verified = true, Link `bitcoin:<adresse>`.
 - DonatePage in `Other.tsx` neu als eigene Komponente(n) unter `src/components/donate/`; alle Texte in `src/i18n/{de,en,es}.ts` (Copy-Tabelle aus der .md).
+- `socialLinks.x = "https://x.com/HopeCuba"`; neuer Baustein für den X-Hinweis, Texte in DE/EN/ES.
 - Externe Links mit `rel="noopener noreferrer"`.
 - Tests (vitest) für die Sichtbarkeitsregeln: deaktiviert/ungeprüft = verborgen, Statuswechsel aktiviert nichts, Empfängername vor Eintragung = Christof Kluska.
 - Seitentitel/Beschreibung je Sprache aktualisieren.

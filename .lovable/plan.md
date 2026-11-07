@@ -1,0 +1,31 @@
+# Spendenseite überarbeiten (nach Update v1.1)
+
+## Was Besucher sehen werden
+Neue Spendenseite in DE / EN / ES, Aufbau laut Vorgabe:
+
+1. **Kopfbereich** – Titelbild (Mutter mit zwei Jungen), Überschrift "Hilfe beginnt heute. Nicht erst nach der Vereinsgründung.", Hinweis zum aktuellen Status (Verein in Gründung), drei Buttons (Spenden / Mitmachen / Kontakt) und das Kampagnenziel.
+2. **Drei Spendenwege**
+   - Banküberweisung – erst sichtbar, wenn Daten freigegeben sind.
+   - Bitcoin – QR-Code direkt aus der Adresse erzeugt (ohne fremden Dienst), Adresse mit Kopier-Knopf.
+   - Silent Payments – als "in Vorbereitung" angezeigt.
+   - Crowdfunding – nur allgemeine Plattform-Links, Kampagnen-Link bleibt leer bis Christof Kluska ihn bestätigt.
+3. **Nothilfe-Beispiel** – das passende Plakat "Nothilfe in Holguín" je Sprache (50 USD = ein Monat Lebensmittel).
+4. **Mitmachen** – 8 Karten mit Möglichkeiten zur Mithilfe.
+5. **Partner & Förderkreis** – Abschnitt für Unternehmen und Unterstützer.
+6. **Transparenz-FAQ** – 8 Fragen und Antworten aus der Vorlage.
+7. **Abschluss** – Aufruf mit Kontaktmöglichkeit.
+
+Wichtig vor der Eintragung: Als Empfänger wird Christof Kluska (Initiator) als privater Sammler genannt, nicht "Hope Cuba e.V.". Keine Countdowns oder Drucktexte. Bisherige Farben (Navy/Grün/Gold) bleiben.
+
+## Regeln
+- Ein Spendenweg erscheint nur, wenn er sowohl eingeschaltet als auch geprüft ist.
+- Mitmachen, Kontakt und Partnerschaft sind immer aktiv.
+- Statuswechsel (z. B. "eingetragen") schaltet nichts automatisch frei.
+
+## Technische Details
+- Neues Konfigurationsmodul `src/config/hope-cuba.ts` (LegalStatus, campaign, organization, payment: bank, bitcoin, silentPayments, crowdfunding); `organization-status.ts` liest daraus bzw. bleibt kompatibel.
+- Bitcoin-Adresse aus Projektgedächtnis; QR mit vorhandenem `qrcode.react`.
+- DonatePage in `Other.tsx` neu als eigene Komponente(n) unter `src/components/donate/`; alle Texte in `src/i18n/{de,en,es}.ts` (Copy-Tabelle aus der .md).
+- Externe Links mit `rel="noopener noreferrer"`.
+- Tests (vitest) für die Sichtbarkeitsregeln: deaktiviert/ungeprüft = verborgen, Statuswechsel aktiviert nichts, Empfängername vor Eintragung = Christof Kluska.
+- Seitentitel/Beschreibung je Sprache aktualisieren.

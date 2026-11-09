@@ -59,8 +59,8 @@ export function DonatePage() {
           <p className="mt-3 max-w-2xl opacity-90">{d.intro}</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <a href="#spenden" className={btn.primary}>{d.ctaDonate}</a>
-            <a href="#mitmachen" className={btn.outline}>{d.ctaHelp}</a>
-            <a href={`mailto:${contactData.email}`} className={btn.outline}>{d.ctaContact}</a>
+            <a href="#mitmachen" className="inline-flex items-center rounded-full border-2 border-primary-foreground px-5 py-2.5 font-bold text-primary-foreground hover:bg-primary-foreground/10">{d.ctaHelp}</a>
+            <a href={`mailto:${contactData.email}`} className="inline-flex items-center rounded-full border-2 border-primary-foreground px-5 py-2.5 font-bold text-primary-foreground hover:bg-primary-foreground/10">{d.ctaContact}</a>
           </div>
           <p className="mt-4 text-sm opacity-90">{d.goal}: {d.goalMin} {fmt(campaign.minimumGoalEUR)} · {d.goalStretch} {fmt(campaign.stretchGoalEUR)} · {d.period} {date(campaign.startDate)} – {date(campaign.endDate)}</p>
         </div>

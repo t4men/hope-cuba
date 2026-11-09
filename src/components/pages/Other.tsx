@@ -22,24 +22,7 @@ function List({ items }: { items: string[] }) {
   return <ul className="mt-3 list-disc space-y-1 pl-5 text-muted-foreground">{items.map((i) => <li key={i}>{i}</li>)}</ul>;
 }
 
-export function DonatePage() {
-  const t = useT();
-  const d = t.donate;
-  return (
-    <>
-      <PageHeader title={d.title} intro={d.intro} />
-      <Section>
-        <StatusNotice className="mb-8" />
-        <div className="grid gap-6 md:grid-cols-2">
-          <Card><h2 className="text-lg font-extrabold text-primary">{d.whyTitle}</h2><p className="mt-2 text-muted-foreground">{d.whyText}</p></Card>
-          <Card><h2 className="text-lg font-extrabold text-secondary">{d.nowTitle}</h2><List items={d.now} /><div className="mt-5"><ContactButtons /></div></Card>
-          <Card><h2 className="text-lg font-extrabold text-primary">{d.laterTitle}</h2><List items={d.later} /></Card>
-          <Card><h2 className="text-lg font-extrabold text-primary">{d.memberTitle}</h2><p className="mt-2 text-muted-foreground">{d.memberText}</p></Card>
-        </div>
-      </Section>
-    </>
-  );
-}
+export { DonatePage } from "../donate/DonatePage";
 
 export function InvolvedPage() {
   const t = useT();

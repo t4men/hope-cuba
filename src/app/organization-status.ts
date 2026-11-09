@@ -29,9 +29,9 @@ export const campaign = {
 export const payment = {
   bank: { enabled: false, verified: false, owner: "", iban: "", bic: "", reference: "Hope Cuba – Nothilfe Holguín" },
   bitcoin: {
-    enabled: false, // true only after recipient assignment and test receipt
-    verified: false,
-    ownerDescription: "",
+    enabled: true,
+    verified: true,
+    ownerDescription: "Christof Kluska",
     address: "bc1qdcknh849yme4msnnq3rrqh90xm4w6rjce60rjy",
   },
   silentPayments: { enabled: false, verified: false, address: "" },
@@ -73,7 +73,7 @@ export const contactData = {
 
 export const siteUrl = "https://www.hope-cuba.org";
 
-export const socialLinks = { facebook: "", instagram: "", tiktok: "", x: "" };
+export const socialLinks = { facebook: "", instagram: "", tiktok: "", x: "https://x.com/HopeCuba" };
 
 export const publicName = () =>
   organizationStatus.isRegistered ? organizationStatus.registeredName : organizationStatus.preRegistrationName;

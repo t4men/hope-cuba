@@ -15,3 +15,4 @@
 - Localized URLs come from `src/app/routes-map.ts`; routes are `$lang`, `$lang.$page` (page switch by slug) and `$lang.$page.$sub` (project detail), so new pages only need a slug entry and a component.
 - Legal/launch behaviour (e.V. naming, logos, donations, tax statements, contact form) is controlled only by flags in `src/app/organization-status.ts`, so the launch needs no rebuild.
 - Statute texts live in `src/content/statutes.ts`; the statutes page has tabs ready for the Rules of Procedure and Financial Regulations.
+- The Q&A assistant (`src/lib/assistant/assistant.functions.ts`) answers only from the i18n dictionaries plus `organization-status.ts`, and lists only donation methods that are live there, so its answers stay in step with the site. Server-function files must not live under `src/server/` because the client import guard blocks that folder.

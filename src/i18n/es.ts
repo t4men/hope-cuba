@@ -189,7 +189,8 @@ export const es: Dict = {
   about: {
     title: "Sobre nosotros",
     storyTitle: "Cómo empezó todo",
-    story: "Desde su primer viaje a Cuba en enero de 2023, Christof Kluska (CK) apoya de forma privada a familias necesitadas en Cuba. A partir de esta experiencia nace Hope Cuba como proyecto de ayuda duradero.",
+    story: "Desde su primer viaje a Cuba en enero de 2023, Christof Kluska apoya de forma privada a familias necesitadas en Cuba. A partir de esta experiencia nace Hope Cuba como proyecto de ayuda duradero.",
+    photoAlt: "Christof Kluska con un niño en Holguín, Cuba",
     teamTitle: "Equipo fundador propuesto",
     teamNote: "Estas personas han sido propuestas para la fundación y aún no han sido elegidas.",
     team: [

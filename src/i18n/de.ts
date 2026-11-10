@@ -210,7 +210,8 @@ export const de = {
   about: {
     title: "Über uns",
     storyTitle: "Wie alles begann",
-    story: "Christof Kluska (CK) unterstützt seit seiner ersten Kubareise im Januar 2023 privat hilfsbedürftige Familien in Kuba. Von dieser Erfahrung ausgehend entsteht Hope Cuba als dauerhaftes Hilfsprojekt.",
+    story: "Christof Kluska unterstützt seit seiner ersten Kubareise im Januar 2023 privat hilfsbedürftige Familien in Kuba. Von dieser Erfahrung ausgehend entsteht Hope Cuba als dauerhaftes Hilfsprojekt.",
+    photoAlt: "Christof Kluska mit einem Kind in Holguín, Kuba",
     teamTitle: "Vorgeschlagenes Gründungsteam",
     teamNote: "Die Personen sind für die Gründung vorgeschlagen und noch nicht gewählt.",
     team: [

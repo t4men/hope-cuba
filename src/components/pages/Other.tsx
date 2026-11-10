@@ -5,6 +5,7 @@ import { LANGS, type Lang } from "@/app/routes-map";
 import { statutes } from "@/content/statutes";
 import { useLang, useT } from "@/i18n";
 import { cn } from "@/lib/utils";
+import ckPhoto from "@/assets/christof-kluska-holguin-v12.png.asset.json";
 import { ShareBlock, StatusNotice } from "../site/blocks";
 import { Card, LangLink, PageHeader, Section, btn } from "../site/ui";
 
@@ -45,7 +46,15 @@ export function AboutPage() {
   const a = t.about;
   return (
     <>
-      <PageHeader title={a.title} intro={a.story} />
+      <header className="border-b border-border bg-[image:var(--gradient-hero)]">
+        <div className="container-page grid items-center gap-8 py-14 md:grid-cols-2 md:py-20">
+          <div>
+            <h1 className="text-3xl font-extrabold tracking-tight text-primary md:text-5xl">{a.title}</h1>
+            <p className="mt-5 text-lg text-muted-foreground">{a.story}</p>
+          </div>
+          <img src={ckPhoto.url} alt={a.photoAlt} className="w-full rounded-2xl object-cover shadow-lg" />
+        </div>
+      </header>
       <Section title={a.teamTitle}>
         <p className="-mt-4 mb-6 text-muted-foreground">{a.teamNote}</p>
         <div className="grid gap-6 md:grid-cols-3">

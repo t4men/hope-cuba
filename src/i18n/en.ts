@@ -40,7 +40,13 @@ export const en: Dict = {
     contact: { title: "Contact | Hope Cuba", description: "How to reach Hope Cuba in Messel, Germany: address, phone and email." },
     legal: { title: "Legal notice | Hope Cuba", description: "Legal notice (draft) of the Hope Cuba initiative in formation." },
     privacy: { title: "Privacy | Hope Cuba", description: "Privacy information for the Hope Cuba website." },
-    notFound: { title: "Page not found | Hope Cuba", description: "This page does not exist." },
+    assistant: {
+    button: "Questions?", open: "Open assistant", close: "Close", title: "Hope Cuba Assistant",
+    intro: "Ask about the association, projects and donations. Answers are based on this website's content.", placeholder: "Your question …", send: "Send", thinking: "Writing an answer …",
+    error: "Sorry, something went wrong. Please try again or email info@hope-cuba.org.", errors: { busy: "Lots of requests right now. Please try again in a moment.", unavailable: "The assistant is currently unavailable. Please contact us by email.", failed: "Sorry, something went wrong. Please try again or email info@hope-cuba.org." },
+    disclaimer: "Automatically generated answers – no guarantee. Not legal or tax advice.", suggestions: ["How can I donate?", "Is Hope Cuba already a registered association?", "What is the Solar Aid Center?"],
+  },
+  notFound: { title: "Page not found | Hope Cuba", description: "This page does not exist." },
   },
   status: {
     label: "Status",

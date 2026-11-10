@@ -38,7 +38,13 @@ export const de = {
     contact: { title: "Kontakt | Hope Cuba", description: "So erreichen Sie Hope Cuba in Messel: Anschrift, Telefon und E-Mail." },
     legal: { title: "Impressum | Hope Cuba", description: "Impressum (Entwurf) der Initiative Hope Cuba in Gründung." },
     privacy: { title: "Datenschutz | Hope Cuba", description: "Datenschutzhinweise der Website von Hope Cuba." },
-    notFound: { title: "Seite nicht gefunden | Hope Cuba", description: "Diese Seite existiert nicht." },
+    assistant: {
+    button: "Fragen?", open: "Assistent öffnen", close: "Schließen", title: "Hope Cuba Assistent",
+    intro: "Stellen Sie Fragen zu Verein, Projekten und Spenden. Die Antworten basieren auf den Inhalten dieser Website.", placeholder: "Ihre Frage …", send: "Senden", thinking: "Antwort wird erstellt …",
+    error: "Leider ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder schreiben Sie an info@hope-cuba.org.", errors: { busy: "Gerade sind viele Anfragen unterwegs. Bitte versuchen Sie es gleich noch einmal.", unavailable: "Der Assistent ist momentan nicht verfügbar. Bitte kontaktieren Sie uns per E-Mail.", failed: "Leider ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder schreiben Sie an info@hope-cuba.org." },
+    disclaimer: "Automatisch erstellte Antworten – ohne Gewähr. Keine Rechts- oder Steuerberatung.", suggestions: ["Wie kann ich spenden?", "Ist Hope Cuba schon ein eingetragener Verein?", "Was ist das Solar Aid Center?"],
+  },
+  notFound: { title: "Seite nicht gefunden | Hope Cuba", description: "Diese Seite existiert nicht." },
   },
   status: {
     label: "Status",

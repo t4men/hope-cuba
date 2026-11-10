@@ -9,7 +9,7 @@ type Input = { lang: Lang; messages: Msg[] };
 
 function siteContext(lang: Lang) {
   const { assistant: _a, ...rest } = dicts[lang];
-  return JSON.stringify({ site: rest, contact: { ...contactData, email: organizationStatus.email }, status: organizationStatus });
+  return JSON.stringify({ site: rest, contact: contactData, status: organizationStatus });
 }
 
 export const askAssistant = createServerFn({ method: "POST" })
@@ -19,7 +19,7 @@ export const askAssistant = createServerFn({ method: "POST" })
       .slice(-10)
       .filter((m) => (m.role === "user" || m.role === "assistant") && typeof m.content === "string")
       .map((m) => ({ role: m.role, content: m.content.slice(0, 2000) }));
-    if (!messages.length || messages[messages.length - 1].role !== "user") throw new Error("invalid");
+    if (!messages.length || messages[messages.length - 1]?.role !== "user") throw new Error("invalid");
     return { lang, messages };
   })
   .handler(async ({ data }) => {

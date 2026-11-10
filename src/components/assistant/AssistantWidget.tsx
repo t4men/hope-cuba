@@ -1,7 +1,7 @@
 import { MessageCircle, Send, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
-import { askAssistant } from "@/server/assistant.functions";
+import { askAssistant } from "@/lib/assistant/assistant.functions";
 import { useLang, useT } from "@/i18n";
 
 type Msg = { role: "user" | "assistant"; content: string };

@@ -189,7 +189,8 @@ export const en: Dict = {
   about: {
     title: "About us",
     storyTitle: "How it all began",
-    story: "Since his first trip to Cuba in January 2023, Christof Kluska (CK) has privately supported families in need in Cuba. From this experience, Hope Cuba is being created as a lasting aid project.",
+    story: "Since his first trip to Cuba in January 2023, Christof Kluska has privately supported families in need in Cuba. From this experience, Hope Cuba is being created as a lasting aid project.",
+    photoAlt: "Christof Kluska with a child in Holguín, Cuba",
     teamTitle: "Proposed founding team",
     teamNote: "These people have been proposed for the founding and have not yet been elected.",
     team: [

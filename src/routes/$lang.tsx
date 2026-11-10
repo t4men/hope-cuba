@@ -3,6 +3,7 @@ import { isLang } from "@/app/routes-map";
 import { LangContext, getDict } from "@/i18n";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { AssistantWidget } from "@/components/assistant/AssistantWidget";
 
 export const Route = createFileRoute("/$lang")({
   beforeLoad: ({ params }) => {
@@ -25,6 +26,7 @@ function LangLayout() {
           <Outlet />
         </main>
         <Footer />
+        <AssistantWidget />
       </div>
     </LangContext.Provider>
   );

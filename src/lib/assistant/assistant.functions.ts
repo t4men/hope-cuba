@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { generateResponse, PaymentRequiredError, RateLimitError } from "@lovable.dev/ai-gateway";
 import { dicts } from "@/i18n";
-import { contactData, organizationStatus } from "@/app/organization-status";
+import { bitcoinLive, campaign, contactData, organization, organizationStatus, payment, siteUrl, socialLinks } from "@/app/organization-status";
 import type { Lang } from "@/app/routes-map";
 
 type Msg = { role: "user" | "assistant"; content: string };
@@ -9,7 +9,7 @@ type Input = { lang: Lang; messages: Msg[] };
 
 function siteContext(lang: Lang) {
   const { assistant: _a, ...rest } = dicts[lang];
-  return JSON.stringify({ site: rest, contact: contactData, status: organizationStatus });
+  return JSON.stringify({ site: rest, contact: contactData, status: organizationStatus, organization, campaign, website: siteUrl, x: socialLinks.x, activeDonationMethods: { bitcoinAddress: bitcoinLive() ? payment.bitcoin.address : null, bitcoinRecipient: "Christof Kluska (initiator, private, until registration)" } });
 }
 
 export const askAssistant = createServerFn({ method: "POST" })
@@ -30,7 +30,7 @@ export const askAssistant = createServerFn({ method: "POST" })
         instructions:
           `You are the friendly assistant of the Hope Cuba website (initiative in formation). Answer questions about the association, projects and donations ONLY based on the website content below. ` +
           `Always answer in ${langName}, briefly (max ~120 words), plain text. Never invent facts, amounts, bank details or legal status. Never use the abbreviation "CK"; write "Christof Kluska". ` +
-          `If the content does not answer the question, say so and refer to the contact email and phone. Do not give legal or tax advice.\n\nWEBSITE CONTENT (JSON):\n${siteContext(data.lang)}`,
+          `If the content does not answer the question, say so and refer to the contact email and phone. Do not give legal or tax advice. Only mention donation methods listed in activeDonationMethods as available.\n\nWEBSITE CONTENT (JSON):\n${siteContext(data.lang)}`,
         input: data.messages.map((m) => ({ role: m.role, content: m.content })),
       });
       const r = res as unknown as { output_text?: string; output?: Array<{ content?: Array<{ type?: string; text?: string }> }> };

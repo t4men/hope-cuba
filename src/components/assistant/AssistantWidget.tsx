@@ -1,6 +1,5 @@
 import { MessageCircle, Send, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { useServerFn } from "@tanstack/react-start";
 import { askAssistant } from "@/lib/assistant/assistant.functions";
 import { useLang, useT } from "@/i18n";
 
@@ -9,13 +8,14 @@ type Msg = { role: "user" | "assistant"; content: string };
 export function AssistantWidget() {
   const t = useT().assistant;
   const lang = useLang();
-  const ask = useServerFn(askAssistant);
   const [open, setOpen] = useState(false);
   const [msgs, setMsgs] = useState<Msg[]>([]);
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const end = useRef<HTMLDivElement>(null);
-  useEffect(() => end.current?.scrollIntoView({ block: "end" }), [msgs, busy]);
+  useEffect(() => {
+    end.current?.scrollIntoView({ block: "end" });
+  }, [msgs, busy]);
 
   async function send(q: string) {
     const text = q.trim();
@@ -23,7 +23,7 @@ export function AssistantWidget() {
     const next: Msg[] = [...msgs, { role: "user", content: text }];
     setMsgs(next); setInput(""); setBusy(true);
     try {
-      const r = await ask({ data: { lang, messages: next } });
+      const r = await askAssistant({ data: { lang, messages: next } });
       setMsgs([...next, { role: "assistant", content: r.ok ? r.text || t.error : t.errors[r.error] }]);
     } catch {
       setMsgs([...next, { role: "assistant", content: t.error }]);
